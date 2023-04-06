@@ -17,9 +17,8 @@ yellow() {
     echo -e "\033[33m\033[01m$1\033[0m"
 }
 
-run_v2ray() {
-    clear
-    echo "#############################################################"
+clear
+echo "#############################################################"
 echo -e "#              ${RED} Deepnote v2ray 一键安装脚本${PLAIN}                 #"
 echo -e "# ${GREEN}作者${PLAIN}: MisakaNo の 小破站                                  #"
 echo -e "# ${GREEN}博客${PLAIN}: https://blog.misaka.rest                            #"
@@ -37,12 +36,12 @@ red "2. 我不保证脚本其搭建节点的稳定性"
     rm -f web config.json
     yellow "开始安装..."
     wget -O temp.zip https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip
-    unzip -o temp.zip
+    unzip temp.zip
     rm -f temp.zip
     mv v2ray web
-    
-    uuid="779afda6-71f3-4cfe-a123-83cf453f9d4d"
-
+	
+        uuid="8d4a8f5e-c2f7-4c1b-b8c0-f8f5a9b6c384"
+		
     rm -f config.json
     cat << EOF > config.json
 {
